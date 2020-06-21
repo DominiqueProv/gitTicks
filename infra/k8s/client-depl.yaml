@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-depl
+spec:
+  # run one single pod
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  #describe how the pod managed by that deployment should behave
+  template:
+    #how the deployment is gonna find the pods to manage
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+        - name: client
+          image: us.gcr.io/ticketing-dev-279318/client
+
+#allow request to get acces to this pod
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-srv
+spec:
+  #how the service is gonna find the pod that is suppose to govern request to
+  selector:
+    app: client
+  ports:
+    - name: client
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
