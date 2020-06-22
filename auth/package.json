@@ -6,13 +6,13 @@
   "scripts": {
     "start": "ts-node-dev --poll src/index.ts",
     "test": "jest --watchAll --no-cache",
-    "test:ci": "jest --no-cache"
+    "test:ci": "jest"
   },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
-      "<rootDir>/src/test/setup.ts"
+      "./src/Test/setup.ts"
     ]
   },
   "keywords": [],
