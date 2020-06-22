@@ -7,7 +7,7 @@ import { User } from '../Models/user';
 import { Password } from '../Services/password';
 
 const router = express.Router();
-
+console.log('Test Start');
 router.post(
   '/api/users/signin',
   [
