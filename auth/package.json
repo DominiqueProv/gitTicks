@@ -12,7 +12,7 @@
     "preset": "ts-jest",
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
-      "./src/test/setup.ts"
+      "auth/src/test/setup.ts"
     ]
   },
   "keywords": [],
