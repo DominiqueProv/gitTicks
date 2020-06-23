@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import { app } from './app';
 
 const start = async () => {
-  console.log('345');
+  console.log('My 345');
   //check if the key exist, if not will throw an error
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined');
