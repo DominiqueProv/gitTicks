@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - name: tickets
+          # image: dominiqueprov/tickets
           image: us.gcr.io/ticketing-dev-279318/tickets
           # secret env key // need to know if there is a token -- with the key
           env:

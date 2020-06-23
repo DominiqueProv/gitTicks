@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - name: payments
+          # image: dominiqueprov/payments
           image: us.gcr.io/ticketing-dev-279318/payments
           # secret env key // need to know if there is a token -- with the key
           env:
