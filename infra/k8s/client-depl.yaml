@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: client
-          image: us.gcr.io/ticketing-dev-279318/client
-          # image: dominiqueprov/client
+          # image: us.gcr.io/ticketing-dev-279318/client
+          image: dominiqueprov/client
 
 #allow request to get acces to this pod
 ---
