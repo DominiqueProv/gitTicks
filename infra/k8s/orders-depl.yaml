@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: orders
-          # image: dominiqueprov/orders
-          image: us.gcr.io/ticketing-dev-279318/orders
+          image: dominiqueprov/orders
+          # image: us.gcr.io/ticketing-dev-279318/orders
           # secret env key // need to know if there is a token -- with the key
           env:
             - name: MONGO_URI

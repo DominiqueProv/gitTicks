@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: expiration
-          # image: dominiqueprov/expiration
-          image: us.gcr.io/ticketing-dev-279318/expiration
+          image: dominiqueprov/expiration
+          # image: us.gcr.io/ticketing-dev-279318/expiration
           env:
             - name: NATS_CLUSTER_ID
               value: ticketing

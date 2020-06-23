@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: auth
-          # image: dominiqueprov/auth
-          image: us.gcr.io/ticketing-dev-279318/auth
+          image: dominiqueprov/auth
+          # image: us.gcr.io/ticketing-dev-279318/auth
           # secret env key
           env:
             - name: MONGO_URI
