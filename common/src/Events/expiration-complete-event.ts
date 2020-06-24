@@ -1,4 +1,4 @@
-import { Subjects } from './subjects';
+import { Subjects } from './Subjects/subjects';
 
 export interface ExpirationCompleteEvent {
   subject: Subjects.ExpirationComplete;
