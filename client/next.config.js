@@ -6,3 +6,9 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = {
+  env: {
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+  },
+};
