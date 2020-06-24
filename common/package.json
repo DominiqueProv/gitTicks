@@ -1,5 +1,5 @@
 {
-  "name": "@sgtickets/common",
+  "name": "@dptickets/common",
   "version": "1.0.24",
   "description": "",
   "main": "./build/index.js",
