@@ -8,8 +8,6 @@ deploy:
 build:
   local:
     push: false
-  # googleCloudBuild:
-  #   projectId: ticketing-dev-279318
   artifacts:
     - image: dominiqueprov/auth
       context: auth
